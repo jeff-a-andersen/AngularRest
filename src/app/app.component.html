@@ -1,0 +1,10 @@
+<h1>Blog Posts</h1>
+<div *ngIf="undefined === restItems">Loading...</div>
+<h1>Jeffro</h1>
+<div *ngIf="undefined !== restItems">
+  <ul>
+    <li *ngFor="let post of restItems">
+        	{{ post.title }}
+    </li>
+  </ul>
+</div>
